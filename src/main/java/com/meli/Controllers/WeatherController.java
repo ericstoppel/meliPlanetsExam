@@ -16,8 +16,12 @@ public class WeatherController {
     @RequestMapping(value = {"", "/"}, method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity<String> index(@RequestParam(value = "dia") int day){
 
-        if(day<0){
+        if(day<1){
             return ResponseEntity.badRequest().body("Revise el dia enviado, debe ser positivo.");
+        }
+
+        if(day>3500){
+            return ResponseEntity.badRequest().body("Revise el dia enviado, esta fuera de la simulacion.");
         }
 
         int dayCode = MySQLDatabase.getWeather(day);
