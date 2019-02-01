@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -Dserver.port=8080 -cp target/classes:target/dependency/* com.meli.Application  --port 8080
+web: java $JAVA_OPTS -jar target/exam-1.0-SNAPSHOT.jar com.meli.Application --server.port=$PORT $JAR_OPTS
