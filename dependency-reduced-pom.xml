@@ -62,7 +62,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>com.your.mainclass</mainClass>
+              <mainClass>com.meli.Application</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>
@@ -82,7 +82,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>com.meli.Model.RunSimulation</mainClass>
+                  <mainClass>com.meli.Application</mainClass>
                 </transformer>
               </transformers>
             </configuration>
