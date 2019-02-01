@@ -1,3 +1,5 @@
+Nombre: Eric Stoppel
+
 Consideraciones: 
     
     En mi opinion, hubiese separado la app que se encarga de realizar la simulacion de la api 
