@@ -29,6 +29,7 @@ Instalar el proyecto con maven (pararse en la ruta raiz del proyecto y ejecutar 
 
 SIMULAR:
 
+
 Para simular simplemente abrir una terminar en la raiz del proyecto y ejecutar el Shell Script "runSimulation.sh" [sh runSimulation.sh]
 
 Decisiones de diseño:

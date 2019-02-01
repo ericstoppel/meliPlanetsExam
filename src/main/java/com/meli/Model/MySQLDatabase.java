@@ -49,8 +49,10 @@ public class MySQLDatabase {
         }
 
         try {
-            myConnection = DriverManager.getConnection("jdbc:mysql://o61qijqeuqnj9chh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/wh0wf7hootejxet0", "hhvjqyfvt25cxjy2", "pzslohd99d5k9s4u");
-            //myConnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/meli", getProperty("user"), getProperty("pw"));
+            /*ESTA CONEXION SE USA PARA CONECTARSE A LA BD EN CLOUD, PARA CORRERLO LOCAL USAMOS LA CONEXION LOCAL*/
+            //myConnection = DriverManager.getConnection("jdbc:mysql://o61qijqeuqnj9chh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/wh0wf7hootejxet0", "hhvjqyfvt25cxjy2", "pzslohd99d5k9s4u");
+
+            myConnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/meli", getProperty("user"), getProperty("pw"));
             if (myConnection != null) {
             } else {
                 log("Fallo al conectar a la BD!");
