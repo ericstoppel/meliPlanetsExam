@@ -27,11 +27,10 @@ public class MySQLDatabase {
     private static String getProperty(String property){
         String prop = "";
         try {
-            ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-            InputStream in = classLoader.getResourceAsStream("Sensitive.conf");
+            InputStream in = ClassLoader.getSystemResourceAsStream("Sensitive.conf");
             Properties props = new Properties();
             props.load(in);
-            prop = props.getProperty(property);closeConnection();
+            prop = props.getProperty(property);
             in.close();
         }catch (IOException ex){
             return prop;
