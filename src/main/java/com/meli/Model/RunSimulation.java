@@ -13,7 +13,7 @@ public class RunSimulation {
         galaxy.addPlanet(betasoide);
         galaxy.addPlanet(vulcano);
 
-        for(int i = 0; i < 3650; i++){
+        for(int i = 1; i < 3651; i++){
             galaxy.oneDayForward();
         }
 
