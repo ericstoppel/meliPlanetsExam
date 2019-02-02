@@ -2,7 +2,6 @@ Nombre: Eric Stoppel
 
 API: https://meliplanetsbyericstoppel.herokuapp.com
 
-HOST:
 
 Consideraciones: 
     
