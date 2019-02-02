@@ -1,5 +1,9 @@
 Nombre: Eric Stoppel
 
+API: https://meliplanetsbyericstoppel.herokuapp.com
+
+HOST:
+
 Consideraciones: 
     
     En mi opinion, hubiese separado la app que se encarga de realizar la simulacion de la api 
@@ -13,21 +17,21 @@ Consideraciones:
     
     curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET https://meliplanetsbyericstoppel.herokuapp.com/clima?dia=33
     
-    Para probar la funcionalidad se recomiendo generar la base de forma local y correrlo
-    en ese entorno.
+    Para probar la funcionalidad recomiendo generar la base de forma local y correrlo
+    en ese entorno, dado que pegarle directamente a jawsdb demora mucho tiempo.
 
     
 
 REQUISITOS: 
 
-	-Tener instalado maven localmente
+-Tener instalado maven localmente
 	
 
-Para importar la Base de datos, abrir MySQL en una conexion local, click en Data Import, seleccionar "Import from Self-Contained File" y abrir el archivo createSQL.sql ubicado en la raiz del proyecto.
+-Para importar la Base de datos, abrir MySQL en una conexion local, click en Data Import, seleccionar "Import from Self-Contained File" y abrir el archivo createSQL.sql ubicado en la raiz del proyecto.
 
-Abrir el archivo Sensitive.conf ubicado en resources y cambiar las credenciales para conectarse a su mysql local
+-Abrir el archivo Sensitive.conf ubicado en resources y cambiar las credenciales para conectarse a su mysql local
 
-Instalar el proyecto con maven (pararse en la ruta raiz del proyecto y ejecutar mvn clean install)
+-Instalar el proyecto con maven (pararse en la ruta raiz del proyecto y ejecutar mvn clean install)
 
 SIMULAR:
 
