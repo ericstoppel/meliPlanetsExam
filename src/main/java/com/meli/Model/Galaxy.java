@@ -8,6 +8,9 @@ public class Galaxy {
     private int dayMaxRain;
     private double intensityMaxRain;
 
+    public Galaxy(){
+        day = 1;
+    }
 
     public int getDayMaxRain() {
         return dayMaxRain;

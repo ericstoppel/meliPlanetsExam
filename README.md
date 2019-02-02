@@ -27,7 +27,7 @@ Para importar la Base de datos, abrir MySQL en una conexion local, click en Data
 
 Abrir el archivo Sensitive.conf ubicado en resources y cambiar las credenciales para conectarse a su mysql local
 
-Instalar el proyecto con maven (pararse en la ruta raiz del proyecto y ejecutar mvn install)
+Instalar el proyecto con maven (pararse en la ruta raiz del proyecto y ejecutar mvn clean install)
 
 SIMULAR:
 
