@@ -1,4 +1,7 @@
-.idea/
+# Carpetas no deseadas
+
+target/
+.idea/**
 
 # Compiled class file
 *.class
