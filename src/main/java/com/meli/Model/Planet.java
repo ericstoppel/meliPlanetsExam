@@ -43,7 +43,6 @@ public class Planet {
             rotateCounterClockWise();
         }
         updateCoordinates();
-        int a = 0;
     }
 
     private void updateCoordinates(){
