@@ -3,7 +3,8 @@ package com.meli.Model;
 public class Planet {
 
     //Se uso una clase civilizacion en caso de que el dia de mañana puedan cambiar de planeta, me parecio
-    //una mejor practica que simplemente ponerle el nombre de la civilizacion al planeta.
+    //una mejor practica que simplemente ponerle el nombre de la civilizacion al planeta, ademas, si en algun
+    //momento se quiere agregar funcionalidad por civilizacion se facilita el codeo.
 
     Civilization civilization = null;
     Position pos;
@@ -11,6 +12,10 @@ public class Planet {
     boolean clockwise;
     int distanceToSun;
     int gradesPerDay;
+
+    public void setCivilization(Civilization civilization) {
+        this.civilization = civilization;
+    }
 
     public Planet(float x, float y, int g, boolean cw, int dts, int gradespd){
         distanceToSun = dts;
@@ -22,13 +27,6 @@ public class Planet {
 
     public Position getPos() {
         return pos;
-    }
-
-    private boolean isValid(){
-        if(civilization != null){
-            return true;
-        }
-        return false;
     }
 
     public void advanceOneDay(){
