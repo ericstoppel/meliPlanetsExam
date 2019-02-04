@@ -39,7 +39,7 @@ Para simular simplemente abrir una terminar en la raiz del proyecto y ejecutar e
 
 Decisiones de diseño:
 
-	-Se decidio crear una clase civilizacion en caso de que esta pueda crecer y tener mas atributos, ademas, de esta manera los planetas podrian de civilizacion en cualquier momento si asi se quisiera. 
+	-Se decidio crear una clase civilizacion en caso de que esta pueda crecer y tener mas atributos, ademas, de esta manera los planetas podrian cambiar de civilizacion en cualquier momento si asi se quisiera. 
 
 	-En la clase util para manejar operaciones aritmeticas se uso como tipo de dato BigDecimal por una cuestion de presicion.
 
