@@ -1,5 +1,7 @@
 package com.meli.Model;
 
+import com.meli.Model.Exceptions.NotInstancedException;
+
 import java.util.Vector;
 
 public class Galaxy {
@@ -24,7 +26,11 @@ public class Galaxy {
         planetVec = vec;
     }
 
-    private int calculateWeather(){
+    private int calculateWeather() throws NotInstancedException{
+        if (planetVec.size() == 0){
+            throw new NotInstancedException();
+        }
+
         int weather;
 
         if(Util.areAlineated(planetVec.get(0).getPos(), planetVec.get(1).getPos(), planetVec.get(2).getPos())){
@@ -58,8 +64,14 @@ public class Galaxy {
         for(Planet planet : planetVec){
             planet.advanceOneDay();
         }
-        int weather = calculateWeather();
-        MySQLDatabase.addDataToDB(day, weather);
-        day++;
+
+        try{
+            int weather = calculateWeather();
+            MySQLDatabase.addDataToDB(day, weather);
+            day++;
+        }catch (NotInstancedException ex){
+            return;
+        }
+
     }
 }
